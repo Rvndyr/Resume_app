@@ -1,26 +1,3 @@
 # README
 
-# Contributors: Randy Rodriguez, Michael Johnston, Jeff Stienstra, Macy Kozak
-
-<!-- This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ... -->
+### Contributors: [Randy Rodriguez](https://github.com/Rvndyr), [Michael Johnston](https://github.com/michaelanjohnston), [Jeff Steinstra](https://github.com/jeffstienstra), [Macy Kozak](https://github.com/macykozak)
