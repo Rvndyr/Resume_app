@@ -1,6 +1,6 @@
 # README
 
-# Contributors: Randy Rodriguez
+# Contributors: Randy Rodriguez, Michael Johnston
 
 <!-- This README would normally document whatever steps are necessary to get the
 application up and running.
