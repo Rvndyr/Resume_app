@@ -1,6 +1,6 @@
 class Student < ApplicationRecord
-  def index
-    students = Student.all
-    render json: students
+  has_secure_password
+  validates :email, presence: true, uniqueness: true
   end
-end
+
+
