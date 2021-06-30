@@ -4,31 +4,32 @@ class StudentController < ApplicationController
     render json: students
   end
 
-  # def show
-  #   student = Student.find_by(id: params [:id])
-  #   render json: student.as_json
-  # end
+  def show
+    student = Student.find_by(id: params[:id])
+    render json: student
+  end
 
-  # def create
-  #   student = Student.new(
-  #     first_name: params[:first_name],
-  #     last_name: params[:last_name],
-  #     email: params[:email],
-  #     password_digest: params[:password_digest]
-  #     phone_number: params[:phone_number]
-  #     bio: params[:bio]
-  #     linkedin: params[:linkedin]
-  #     twitter_handle: params[:twitter_handle]
-  #     website: params[:website]
-  #     resume_url: params[:resume_url]
-  #     github: params[:github]
-  #     photo: params[:photo]
-  #   )
-  #   if student.save
-  #     render json: { message: "Student created successfully" }, status: :created
-  #   else
-  #     render json: { errors: student.errors.full_messages }, status: :bad_request
-  #   end
+  def create
+    student = Student.new(
+      first_name: params[:first_name],
+      last_name: params[:last_name],
+      email: params[:email],
+      password_digest: params[:password_digest],
+      phone_number: params[:phone_number],
+      bio: params[:bio],
+      linkedin: params[:linkedin],
+      twitter_handle: params[:twitter_handle],
+      website: params[:website],
+      resume_url: params[:resume_url],
+      github: params[:github],
+      photo: params[:photo],
+    )
+    if student.save
+      render json: { message: "Student created successfully" }, status: :created
+    else
+      render json: { errors: student.errors.full_messages }, status: :bad_request
+    end
+  end
 
   #   def update
   #     student = Student.find_by(id: params[:id])
