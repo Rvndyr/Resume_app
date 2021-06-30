@@ -12,8 +12,8 @@ Experience.create!(student_id: "2", start_date: "3/2/2020", end_date: "4/1/2020"
 Education.create!(student_id: "1", start_date: "1/12/2015", end_date: "9/10/2018", degree: "BA Art History", university: "Michigan State University", details: "Got a degree in Art History.")
 Education.create!(student_id: "2", start_date: "10/1/2018", end_date: "4/15/2019", degree: "HVAC Certification", university: "Environmental Technical Institute", details: "Certificate in heating, ventilatoin, air conditioning and refrigeration.")
 
-Skills.create!(student_id: "1", skill: "Painting")
-Skills.create!(student_id: "2", skill: "HTML")
+Skill.create!(student_id: "1", skill: "Painting")
+Skill.create!(student_id: "2", skill: "HTML")
 
-Projects.create!(student_id: "1", name: "Rummy", description: "Card game", url: "Rummy.com", screenshot: "rummy.jpg")
-Projects.create!(student_id: "2", name: "Pinball", description: "Miniball game", url: "pinballgame.com", screenshot: "pinball.jpg")
+Project.create!(student_id: "1", name: "Rummy", description: "Card game", url: "Rummy.com", screenshot: "rummy.jpg")
+Project.create!(student_id: "2", name: "Pinball", description: "Miniball game", url: "pinballgame.com", screenshot: "pinball.jpg")
