@@ -6,4 +6,5 @@ class StudentSerializer < ActiveModel::Serializer
   # has_many :educations
   # has_many :skills
   # has_many :projects
+
 end
