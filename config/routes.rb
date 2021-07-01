@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   post "/experiences" => "experience#create"
   patch "/experiences/:id" => "experience#update"
   delete "/experiences/:id" => "experience#destroy"
-  
+
   # Sessions Route:
   post "/sessions" => "sessions#create"
 end
