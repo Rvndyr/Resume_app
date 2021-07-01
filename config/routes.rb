@@ -6,9 +6,14 @@ Rails.application.routes.draw do
   patch "/students/:id" => "student#update"
   delete "/students/:id" => "student#destroy"
 
+<<<<<<< HEAD
   get "/experiences" => "experience#index"
   get "/experiences/:id" => "experience#show"
   post "/experiences" => "experience#create"
   patch "/experiences/:id" => "experience#update"
   delete "/experiences/:id" => "experience#destroy"
+=======
+  # Sessions Route:
+  post "/sessions" => "sessions#create"
+>>>>>>> b868fa5e4c9f15b52a9255dc28009da59663eef6
 end
