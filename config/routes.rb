@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   patch "/students/:id" => "student#update"
   patch "/projects/:id" => "project#update"
   delete "/students/:id" => "student#destroy"
+  get "/educations" => "education#index"
 
   delete "/projects/:id" => "project#destroy"
 
