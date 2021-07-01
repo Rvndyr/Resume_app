@@ -3,8 +3,7 @@ class StudentSerializer < ActiveModel::Serializer
              :bio, :linkedin, :twitter_handle, :website, :resume_url, :github, :photo
 
   has_many :experiences
-  # has_many :educations
-  # has_many :skills
-  # has_many :projects
-
+  has_many :educations
+  has_many :skills
+  has_many :projects
 end
