@@ -31,24 +31,24 @@ class StudentController < ApplicationController
     end
   end
 
-    def update
-      student = Student.find_by(id: params[:id])
-      student.first_name = params[:first_name] || student.first_name
-      student.last_name = params[:last_name] || student.last_name
-      student.email = params[:email] || student.email
-      student.password_digest = params[:password_digest] || student.password_digest
-      student.phone_number = params[:phone_number] || student.phone_number
-      student.bio = params[:bio] || student.bio
-      student.linkedin = params[:linkedin] || student.linkedin
-      student.twitter_handle = params[:twitter_handle] || student.twitter_handle
-      student.website = params[:website] || student.website
-      student.resume_url = params[:resume_url] || student.resume_url
-      student.github = params[:github] || student.github
-      student.photo = params[:photo] || student.photo
-      student.save
-      render json: student
-    end
-  
+  def update
+    student = Student.find_by(id: params[:id])
+    student.first_name = params[:first_name] || student.first_name
+    student.last_name = params[:last_name] || student.last_name
+    student.email = params[:email] || student.email
+    student.password_digest = params[:password_digest] || student.password_digest
+    student.phone_number = params[:phone_number] || student.phone_number
+    student.bio = params[:bio] || student.bio
+    student.linkedin = params[:linkedin] || student.linkedin
+    student.twitter_handle = params[:twitter_handle] || student.twitter_handle
+    student.website = params[:website] || student.website
+    student.resume_url = params[:resume_url] || student.resume_url
+    student.github = params[:github] || student.github
+    student.photo = params[:photo] || student.photo
+    student.save
+    render json: student
+  end
+
   #   def destroy
   #     student = Student.find_by(id: params[:id])
   #     student.destroy
